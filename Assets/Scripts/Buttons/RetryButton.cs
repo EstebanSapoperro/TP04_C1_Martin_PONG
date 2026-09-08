@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RetryButton : MonoBehaviour
 {
@@ -17,6 +17,7 @@ public class RetryButton : MonoBehaviour
 
     private void onClick() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("SampleScene");
     }
 }

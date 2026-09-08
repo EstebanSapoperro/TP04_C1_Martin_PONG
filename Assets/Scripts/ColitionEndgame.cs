@@ -1,16 +1,22 @@
+using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ColitionEndgame : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private GameObject gameOverPanel;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ball"))
+        {
+            Debug.Log("Un objeto de la capa correcta ha entrado al trigger.");
+            Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
+        }
     }
 }

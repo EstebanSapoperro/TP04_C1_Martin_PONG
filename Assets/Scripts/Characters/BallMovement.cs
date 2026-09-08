@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
     public Rigidbody2D rb;
     private bool GoingUp = false;
     private bool GoingRight = false;
-    [SerializeField] private float initialMaxVelocity = 3.0f;
+    [SerializeField] private float initialMaxVelocity = -3.0f;
     private float maxVelocity;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
