@@ -19,7 +19,6 @@ public class PlayerDash : MonoBehaviour
     {
         if (Input.GetKey(dashInput))
         {
-            Debug.Log("se tomo el input");
             dashAction = true;
         }
         else
@@ -43,7 +42,6 @@ public class PlayerDash : MonoBehaviour
 
     private void Dash() 
     {
-        Debug.Log("dasheo");
         rb.linearVelocityY = rb.linearVelocityY * dashMulty;
         rb.linearVelocityX = rb.linearVelocityX * dashMulty;
         cooldownOfDash = baseCooldownOfDash;
