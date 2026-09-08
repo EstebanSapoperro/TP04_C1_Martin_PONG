@@ -1,19 +1,15 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ButtonMove : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("El mouse entró al botón");
-
-        transform.localScale += Vector3.one;
+        Debug.Log("Entró");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("El mouse salió del botón");
-
-        transform.localScale -= Vector3.one;
+        Debug.Log("Salió");
     }
 }

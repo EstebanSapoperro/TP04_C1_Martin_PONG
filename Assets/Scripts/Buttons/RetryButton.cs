@@ -1,16 +1,22 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RetryButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Button Exitbutton;
+    private void Awake()
     {
-        
+        Exitbutton.onClick.AddListener(onClick);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        Exitbutton.onClick.RemoveAllListeners();
+    }
+
+    private void onClick() 
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
