@@ -43,28 +43,24 @@ public class Ball : MonoBehaviour
         {
             GoingRight = false;
             maxVelocity += Charge;
-            Debug.Log("cambio de dirección hacia la izquierda");
         }
 
         if (rb.linearVelocityX > 0 && !GoingRight)
         {
             GoingRight = true;
             maxVelocity += Charge;
-            Debug.Log("cambio de dirección hacia la derecha");
         }
 
         if (rb.linearVelocityY < 0 && GoingUp)
         {
             GoingUp = false;
             maxVelocity += Charge;
-            Debug.Log("cambio de dirección hacia abajo");
         }
 
         if (rb.linearVelocityY > 0 && !GoingUp)
         {
             GoingUp = true;
             maxVelocity += Charge;
-            Debug.Log("cambio de dirección hacia arriba");
         }
 
     }

@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   Charge: 0.05
   rb: {fileID: 101133943685074505}
-  initialMaxVelocity: 1.5
+  initialMaxVelocity: 2
 --- !u!212 &561276657603186153
 SpriteRenderer:
   serializedVersion: 2
@@ -172,7 +172,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &6714413604679301284
 GameObject:
   m_ObjectHideFlags: 0
