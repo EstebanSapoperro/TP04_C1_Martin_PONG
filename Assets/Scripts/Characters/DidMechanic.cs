@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DidMechanic : MonoBehaviour
 {
@@ -7,8 +8,11 @@ public class DidMechanic : MonoBehaviour
     [SerializeField] private TextMeshProUGUI counter;
     [SerializeField] private Sprite[] faces;
      private Sprite actualSprite;
+
+    [SerializeField] private Image visualSprite;
     [SerializeField] private float minbasecooldown = 5.0f;
     [SerializeField] private float maxbasecooldown = 8.0f;
+    [SerializeField] private float timeDetection = -0.5f;
 
     private int actualDirection = 0;
     //0 = none
@@ -28,21 +32,25 @@ public class DidMechanic : MonoBehaviour
         if (actualDirection == 1) 
         {
             actualSprite = faces[1];
+            visualSprite.sprite = actualSprite;
         }
 
         if (actualDirection == 2)
         {
             actualSprite = faces[2];
+            visualSprite.sprite = actualSprite;
         }
 
         if (actualDirection == 3)
         {
             actualSprite = faces[3];
+            visualSprite.sprite = actualSprite;
         }
 
         if (actualDirection == 4)
         {
             actualSprite = faces[4];
+            visualSprite.sprite = actualSprite;
         }
     }
 
@@ -57,6 +65,7 @@ public class DidMechanic : MonoBehaviour
         if (cooldowntimer <= 0) 
         {
             actualSprite = faces[0];
+            visualSprite.sprite = actualSprite;
 
             if ((actualDirection == 1) && (GameManager.Stats.movingUp == false)) 
             {
@@ -83,7 +92,7 @@ public class DidMechanic : MonoBehaviour
             }
         }
 
-        if (cooldowntimer <= -1) 
+        if (cooldowntimer <= timeDetection) 
         {
             actualDirection = Random.Range(1, 4);
 
@@ -92,21 +101,25 @@ public class DidMechanic : MonoBehaviour
             if (actualDirection == 1)
             {
                 actualSprite = faces[1];
+                visualSprite.sprite = actualSprite;
             }
 
             if (actualDirection == 2)
             {
                 actualSprite = faces[2];
+                visualSprite.sprite = actualSprite;
             }
 
             if (actualDirection == 3)
             {
                 actualSprite = faces[3];
+                visualSprite.sprite = actualSprite;
             }
 
             if (actualDirection == 4)
             {
                 actualSprite = faces[4];
+                visualSprite.sprite = actualSprite;
             }
 
         }
