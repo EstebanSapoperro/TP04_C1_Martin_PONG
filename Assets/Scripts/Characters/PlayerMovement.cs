@@ -40,7 +40,10 @@ public class Movement : MonoBehaviour
             movingLeft = true;
         else movingLeft = false;
 
-
+        GameManager.Stats.movingDown = movingDown;
+        GameManager.Stats.movingUp = movingUp;
+        GameManager.Stats.movingLeft = movingLeft;
+        GameManager.Stats.movingRight = movingRight;
     }
     private void FixedUpdate()
     {
