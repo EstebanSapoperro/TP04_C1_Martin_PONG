@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1833689040471912565
 Transform:
   m_ObjectHideFlags: 0
@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   Charge: 0.05
   rb: {fileID: 649438490159061496}
+  ball: 1
   initialMaxVelocity: 2
 --- !u!212 &4366436269919749659
 SpriteRenderer:

@@ -9,6 +9,7 @@ public class Voidmechanic : MonoBehaviour
     [SerializeField] private SpriteRenderer voided;
     [SerializeField] private SpriteRenderer playerOne;
     [SerializeField] private SpriteRenderer playerTwo;
+    [SerializeField] private GameObject gameOverPanel;
     private float cooldowntimer;
     private bool priWarning = false;
     private bool secWarning = false;
@@ -55,6 +56,12 @@ public class Voidmechanic : MonoBehaviour
         if ((cooldowntimer <= countDanger) && (danger == false))
         {
             Debug.Log("llego al timer2");
+            if (playerOne.color != Color.black) 
+            {
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+            }
+
             voided.color = Color.black;
             danger = true;
         }
