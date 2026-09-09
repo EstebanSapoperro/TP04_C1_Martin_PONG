@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] PlayerDataSo data;
     public Rigidbody2D rb;
     [Header("Movement")]
     [SerializeField] public float velocity = 6.0f;
