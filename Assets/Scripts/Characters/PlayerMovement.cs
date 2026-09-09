@@ -5,15 +5,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] PlayerDataSo data;
     public Rigidbody2D rb;
-    [Header("Movement")]
-    [SerializeField] public float velocity = 6.0f;
-    [SerializeField] public float yawMultiplier = 5.0f;
-    [SerializeField] public float fricction = 0.05f;
-
-    [SerializeField] private KeyCode UpInput = KeyCode.W;
-    [SerializeField] private KeyCode RightInput = KeyCode.D;
-    [SerializeField] private KeyCode DownInput = KeyCode.S;
-    [SerializeField] private KeyCode LeftInput = KeyCode.A;
+    
 
     [SerializeField] public bool isPlayer1 = true;
 
@@ -33,19 +25,19 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(UpInput))
+        if (Input.GetKey(data.upInput))
             movingUp = true;
         else movingUp = false;
 
-        if (Input.GetKey(DownInput))
+        if (Input.GetKey(data.downInput))
             movingDown = true;
         else movingDown = false;
 
-        if (Input.GetKey(RightInput))
+        if (Input.GetKey(data.rightInput))
             movingRight = true;
         else movingRight = false;
 
-        if (Input.GetKey(LeftInput))
+        if (Input.GetKey(data.leftInput))
             movingLeft = true;
         else movingLeft = false;
 
@@ -55,34 +47,34 @@ public class Movement : MonoBehaviour
     {
         if (movingRight)
             if (rb.linearVelocityX < 0)
-                rb.AddForceX(velocity * yawMultiplier);
-            else rb.AddForceX(velocity);
+                rb.AddForceX(data.velocity * data.yawMulty);
+            else rb.AddForceX(data.velocity);
 
 
         if (movingLeft)
             if (rb.linearVelocityX > 0)
-                rb.AddForceX(-velocity * yawMultiplier);
-            else rb.AddForceX(-velocity);
+                rb.AddForceX(-data.velocity * data.yawMulty);
+            else rb.AddForceX(-data.velocity);
 
 
         if (movingUp)
             if (rb.linearVelocityY < 0)
-                rb.AddForceY(velocity * yawMultiplier);
-            else rb.AddForceY(velocity);
+                rb.AddForceY(data.velocity * data.yawMulty);
+            else rb.AddForceY(data.velocity);
 
         if (movingDown)
             if (rb.linearVelocityY > 0)
-                rb.AddForceY(-velocity * yawMultiplier);
-            else rb.AddForceY(-velocity);
+                rb.AddForceY(-data.velocity * data.yawMulty);
+            else rb.AddForceY(-data.velocity);
 
         if (movingRight == false && movingLeft == false)
         {
-            rb.linearVelocityX += -rb.linearVelocityX * fricction;
+            rb.linearVelocityX += -rb.linearVelocityX * data.friction;
         }
 
         if (movingUp == false && movingDown == false)
         {
-            rb.linearVelocityY += -rb.linearVelocityY * fricction;
+            rb.linearVelocityY += -rb.linearVelocityY * data.friction;
         }
 
 

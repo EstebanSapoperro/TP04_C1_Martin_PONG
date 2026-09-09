@@ -11,7 +11,7 @@ public class PlayerDataSo : ScriptableObject
 
     [Header("Movement")]
     public KeyCode upInput = KeyCode.W;
-    public KeyCode uightInput = KeyCode.D;
+    public KeyCode rightInput = KeyCode.D;
     public KeyCode downInput = KeyCode.S;
     public KeyCode leftInput = KeyCode.A;
     public KeyCode dashInput = KeyCode.Q;
