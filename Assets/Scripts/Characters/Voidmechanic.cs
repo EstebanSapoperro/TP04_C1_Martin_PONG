@@ -3,7 +3,8 @@ using UnityEngine;
 public class Voidmechanic : MonoBehaviour
 {
 
-    [SerializeField] private float basecooldown = 7.0f;
+    [SerializeField] private float minbasecooldown = 6.0f;
+    [SerializeField] private float maxbasecooldown = 8.0f;
 
 
     [SerializeField] private SpriteRenderer voided;
@@ -23,7 +24,7 @@ public class Voidmechanic : MonoBehaviour
 
     void Start()
     {
-        cooldowntimer = basecooldown;
+        cooldowntimer = Random.Range(minbasecooldown, maxbasecooldown);
     }
     private void FixedUpdate()
     {
@@ -69,7 +70,7 @@ public class Voidmechanic : MonoBehaviour
         if (cooldowntimer <= 0)
         {
             voided.color = Color.blue;
-            cooldowntimer = basecooldown;
+            cooldowntimer = Random.Range(minbasecooldown, maxbasecooldown);
             danger = false;
             priWarning = false;
             secWarning = false;
