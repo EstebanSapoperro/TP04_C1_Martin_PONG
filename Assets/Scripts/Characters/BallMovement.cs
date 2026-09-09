@@ -4,16 +4,28 @@ public class Ball : MonoBehaviour
 {
     [SerializeField] public float Charge = 0.2f;
     public Rigidbody2D rb;
-    private bool GoingUp = false;
-    private bool GoingRight = false;
+    [SerializeField] private bool ball = true;
+    private bool goingUp = false;
+    private bool goingRight = false;
     [SerializeField] private float initialMaxVelocity = -3.0f;
     private float maxVelocity;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxVelocity = initialMaxVelocity;
-        rb.linearVelocityX = initialMaxVelocity; rb.linearVelocityY = initialMaxVelocity;
+        if (ball)
+        {
+            maxVelocity = initialMaxVelocity;
+            rb.linearVelocityX = initialMaxVelocity; rb.linearVelocityY = initialMaxVelocity;
+        }
+        else 
+        {
+            goingRight = true;
+            goingUp = true;
+            maxVelocity = initialMaxVelocity;
+            rb.linearVelocityX = -initialMaxVelocity; rb.linearVelocityY = -initialMaxVelocity;
+        }
+        
     }
     private void FixedUpdate()
     {
@@ -39,27 +51,27 @@ public class Ball : MonoBehaviour
         }
 
         //sitema de carga rebotes
-        if (rb.linearVelocityX < 0 && GoingRight)
+        if (rb.linearVelocityX < 0 && goingRight)
         {
-            GoingRight = false;
+            goingRight = false;
             maxVelocity += Charge;
         }
 
-        if (rb.linearVelocityX > 0 && !GoingRight)
+        if (rb.linearVelocityX > 0 && !goingRight)
         {
-            GoingRight = true;
+            goingRight = true;
             maxVelocity += Charge;
         }
 
-        if (rb.linearVelocityY < 0 && GoingUp)
+        if (rb.linearVelocityY < 0 && goingUp)
         {
-            GoingUp = false;
+            goingUp = false;
             maxVelocity += Charge;
         }
 
-        if (rb.linearVelocityY > 0 && !GoingUp)
+        if (rb.linearVelocityY > 0 && !goingUp)
         {
-            GoingUp = true;
+            goingUp = true;
             maxVelocity += Charge;
         }
 

@@ -7,7 +7,6 @@ public class PlayerCCColition : MonoBehaviour
     //Player Color Change Colition
     void Start()
     {
-        player = GetComponent<SpriteRenderer>();
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
