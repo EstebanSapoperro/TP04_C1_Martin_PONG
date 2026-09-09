@@ -3,21 +3,20 @@ using UnityEngine;
 public class PlayerDash : MonoBehaviour
 {
     public Rigidbody2D rb;
-    [SerializeField] private KeyCode dashInput = KeyCode.Q;
-    [SerializeField] private float dashMulty = 20.0f;
-    [SerializeField] private float baseCooldownOfDash = 3.0f;
+    [SerializeField] PlayerDataSo data;
+  
     private float cooldownOfDash;
     private bool dashAction = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cooldownOfDash = baseCooldownOfDash;
+        cooldownOfDash = data.baseCooldownOfDash;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(dashInput))
+        if (Input.GetKey(data.dashInput))
         {
             dashAction = true;
         }
@@ -42,9 +41,9 @@ public class PlayerDash : MonoBehaviour
 
     private void Dash() 
     {
-        rb.linearVelocityY = rb.linearVelocityY * dashMulty;
-        rb.linearVelocityX = rb.linearVelocityX * dashMulty;
-        cooldownOfDash = baseCooldownOfDash;
+        rb.linearVelocityY = rb.linearVelocityY * data.dashMulty;
+        rb.linearVelocityX = rb.linearVelocityX * data.dashMulty;
+        cooldownOfDash = data.baseCooldownOfDash;
     }
 
 }

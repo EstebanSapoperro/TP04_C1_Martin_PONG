@@ -12,3 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bb00d55c07a4740a646e76be29dee3, type: 3}
   m_Name: PlayerDataP1
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDataSo
+  velocity: 6
+  yawMulty: 5
+  friction: 0.05
+  upInput: 119
+  rightInput: 100
+  downInput: 115
+  leftInput: 97
+  dashInput: 113
+  dashMulty: 3
+  baseCooldownOfDash: 3
+  isPlayeOne: 1

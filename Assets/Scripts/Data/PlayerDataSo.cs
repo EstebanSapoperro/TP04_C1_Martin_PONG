@@ -16,5 +16,7 @@ public class PlayerDataSo : ScriptableObject
     public KeyCode leftInput = KeyCode.A;
     public KeyCode dashInput = KeyCode.Q;
 
+    public float dashMulty = 20.0f;
+    public float baseCooldownOfDash = 3.0f;
     public bool isPlayeOne = true;
 }

@@ -1,3 +1,4 @@
+using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 
 
@@ -6,8 +7,6 @@ public class Movement : MonoBehaviour
     [SerializeField] PlayerDataSo data;
     public Rigidbody2D rb;
     
-
-    [SerializeField] public bool isPlayer1 = true;
 
     [SerializeField] private SpriteRenderer ActualColor;
     private bool movingUp = false;

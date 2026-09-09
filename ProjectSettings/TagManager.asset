@@ -47,5 +47,8 @@ TagManager:
   - name: Midle
     uniqueID: 3399279959
     locked: 0
+  - name: Void
+    uniqueID: 1862505659
+    locked: 0
   m_RenderingLayers:
   - Default
