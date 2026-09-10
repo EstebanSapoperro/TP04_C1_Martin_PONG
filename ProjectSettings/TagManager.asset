@@ -50,5 +50,8 @@ TagManager:
   - name: Void
     uniqueID: 1862505659
     locked: 0
+  - name: Player
+    uniqueID: 3118105103
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -13,11 +13,13 @@ public class Movement : MonoBehaviour
     private bool movingDown = false;
     private bool movingRight = false;
     private bool movingLeft = false;
+    public float velocity = 0;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        velocity = data.velocity;
         ActualColor = GetComponent<SpriteRenderer>();
         Debug.Log("listo para moverme, , yes sir");
     }  
@@ -40,34 +42,34 @@ public class Movement : MonoBehaviour
             movingLeft = true;
         else movingLeft = false;
 
-        GameManager.Stats.movingDown = movingDown;
-        GameManager.Stats.movingUp = movingUp;
-        GameManager.Stats.movingLeft = movingLeft;
-        GameManager.Stats.movingRight = movingRight;
+        GameManagerPONG.Stats.movingDown = movingDown;
+        GameManagerPONG.Stats.movingUp = movingUp;
+        GameManagerPONG.Stats.movingLeft = movingLeft;
+        GameManagerPONG.Stats.movingRight = movingRight;
     }
     private void FixedUpdate()
     {
         if (movingRight)
             if (rb.linearVelocityX < 0)
-                rb.AddForceX(data.velocity * data.yawMulty);
+                rb.AddForceX(velocity * data.yawMulty);
             else rb.AddForceX(data.velocity);
 
 
         if (movingLeft)
             if (rb.linearVelocityX > 0)
-                rb.AddForceX(-data.velocity * data.yawMulty);
-            else rb.AddForceX(-data.velocity);
+                rb.AddForceX(-velocity * data.yawMulty);
+            else rb.AddForceX(-velocity);
 
 
         if (movingUp)
             if (rb.linearVelocityY < 0)
-                rb.AddForceY(data.velocity * data.yawMulty);
-            else rb.AddForceY(data.velocity);
+                rb.AddForceY(velocity * data.yawMulty);
+            else rb.AddForceY(velocity);
 
         if (movingDown)
             if (rb.linearVelocityY > 0)
-                rb.AddForceY(-data.velocity * data.yawMulty);
-            else rb.AddForceY(-data.velocity);
+                rb.AddForceY(-velocity * data.yawMulty);
+            else rb.AddForceY(-velocity);
 
         if (movingRight == false && movingLeft == false)
         {

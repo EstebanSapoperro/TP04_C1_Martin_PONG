@@ -67,25 +67,25 @@ public class DidMechanic : MonoBehaviour
             actualSprite = faces[0];
             visualSprite.sprite = actualSprite;
 
-            if ((actualDirection == 1) && (GameManager.Stats.movingUp == false)) 
+            if ((actualDirection == 1) && (GameManagerPONG.Stats.movingUp == false)) 
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
             }
 
-            if ((actualDirection == 2) && (GameManager.Stats.movingRight == false))
+            if ((actualDirection == 2) && (GameManagerPONG.Stats.movingRight == false))
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
             }
 
-            if ((actualDirection == 3) && (GameManager.Stats.movingDown == false))
+            if ((actualDirection == 3) && (GameManagerPONG.Stats.movingDown == false))
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
             }
 
-            if ((actualDirection == 4) && (GameManager.Stats.movingLeft == false))
+            if ((actualDirection == 4) && (GameManagerPONG.Stats.movingLeft == false))
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
