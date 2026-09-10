@@ -4,9 +4,12 @@ public class PlayerCCColition : MonoBehaviour
 {
 
     [SerializeField] private SpriteRenderer player;
+    [SerializeField] private SpriteRenderer playerCapsule;
     //Player Color Change Colition
     void Start()
     {
+        playerCapsule.color = new Color(GameManager.Config.RP1, GameManager.Config.GP1, GameManager.Config.BP1);
+
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
