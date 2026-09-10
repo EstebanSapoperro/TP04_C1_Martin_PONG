@@ -3968,6 +3968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be474d78dcb98e246af76c0f5d3213bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WinPanel
+  roundPanel: {fileID: 1547049497}
+  winingPanel: {fileID: 0}
   winsP1Counter: {fileID: 1262155241}
   winsP2Counter: {fileID: 1594427301}
   deadRason: {fileID: 25741090}

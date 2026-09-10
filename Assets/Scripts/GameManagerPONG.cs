@@ -10,6 +10,10 @@ public class GameManagerPONG : MonoBehaviour
         public static int machTime = 20;
         public static int machWinsCondition = 3;
 
+        public static int baseModifierRequest = 2;
+        public static int modifierRequest = 2;
+        public static int actualModifierRequest = 0;
+
 
         public static bool p1movingUp = false;
         public static bool p1movingDown = false;
