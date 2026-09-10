@@ -21,9 +21,16 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         isPlayerOne = data.isPlayeOne;
-        velocity = data.velocity;
         ActualColor = GetComponent<SpriteRenderer>();
-        Debug.Log("listo para moverme, , yes sir");
+        if (isPlayerOne == true) 
+        {
+            velocity = GameManager.Config.VelocityP1;
+        }
+        if (isPlayerOne == false)
+        {
+            velocity = GameManager.Config.VelocityP2;
+        }
+
     }  
 
     void Update()

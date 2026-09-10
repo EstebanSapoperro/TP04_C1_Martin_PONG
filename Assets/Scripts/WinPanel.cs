@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class WinPanel : MonoBehaviour
 {
-
+    
+    [SerializeField] private GameObject roundPanel;
+    [SerializeField] private GameObject winingPanel;
     [SerializeField] private TMP_Text winsP1Counter;
     [SerializeField] private TMP_Text winsP2Counter;
     [SerializeField] private TMP_Text deadRason;
