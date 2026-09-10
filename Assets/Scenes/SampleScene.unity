@@ -1615,6 +1615,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4a90d22d22d2c4cb50947f8144fc7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeCount
+  winPanel: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  ball: {fileID: 863828136}
   counter: {fileID: 641050282}
 --- !u!1 &466047099
 GameObject:
@@ -3190,6 +3193,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &863828136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5040612368558933694, guid: fb46d20fcd9029040925d80d96c4cda1, type: 3}
+  m_PrefabInstance: {fileID: 3043560910305914660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &903402351
 GameObject:
   m_ObjectHideFlags: 0
@@ -6790,7 +6798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7142855492082709302, guid: fb46d20fcd9029040925d80d96c4cda1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.22
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 7142855492082709302, guid: fb46d20fcd9029040925d80d96c4cda1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7094,7 +7102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4883572550810899439, guid: 602c0b1edcfc6fc4987b8bcd734d6639, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7028238429328099240, guid: 602c0b1edcfc6fc4987b8bcd734d6639, type: 3}
       propertyPath: winPanel

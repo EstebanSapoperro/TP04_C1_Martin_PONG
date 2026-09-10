@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ball : MonoBehaviour
+public class BallMovement : MonoBehaviour
 {
     [SerializeField] public float Charge = 0.2f;
     public Rigidbody2D rb;

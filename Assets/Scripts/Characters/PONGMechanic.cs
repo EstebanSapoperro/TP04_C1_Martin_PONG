@@ -8,11 +8,7 @@ public class PONGMechanic : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     private void OnCollisionEnter2D(Collision2D other)
     {
-        //if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
-       // {
-           // Time.timeScale = 0;
-           // gameOverPanel.SetActive(true);
-       // }
+
 
         PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
 
@@ -24,7 +20,7 @@ public class PONGMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get sliced by PONG", "One");
+                winPanel.DeadRason("get sliced by PONG", " One");
             }
             else
             {
@@ -32,7 +28,7 @@ public class PONGMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get sliced by PONG", "two");
+                winPanel.DeadRason("get sliced by PONG", " two");
             }
 
 

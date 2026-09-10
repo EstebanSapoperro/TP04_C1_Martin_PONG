@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Voidmechanic : MonoBehaviour
 {
@@ -6,11 +7,13 @@ public class Voidmechanic : MonoBehaviour
     [SerializeField] private float minbasecooldown = 6.0f;
     [SerializeField] private float maxbasecooldown = 8.0f;
 
-
+    [SerializeField] PlayerDataSo data;
     [SerializeField] private SpriteRenderer voided;
     [SerializeField] private SpriteRenderer playerOne;
     [SerializeField] private SpriteRenderer playerTwo;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject voidPanel;
+    [SerializeField] WinPanel winPanel;
     private float cooldowntimer;
     private bool priWarning = false;
     private bool secWarning = false;
@@ -56,13 +59,23 @@ public class Voidmechanic : MonoBehaviour
 
         if ((cooldowntimer <= countDanger) && (danger == false))
         {
-            Debug.Log("llego al timer2");
             if (playerOne.color != Color.black) 
             {
+                GameManagerPONG.Stats.p2Win = true;
+                GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get seen by Void", " One");
             }
-
+            else if (playerTwo.color != Color.black)
+            {
+                GameManagerPONG.Stats.p1Win = true;
+                GameManagerPONG.Stats.p1Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get seen by Void", " Two");
+            }
+            voidPanel.SetActive(true);
             voided.color = Color.black;
             danger = true;
         }
@@ -71,6 +84,7 @@ public class Voidmechanic : MonoBehaviour
         {
             voided.color = Color.blue;
             cooldowntimer = Random.Range(minbasecooldown, maxbasecooldown);
+            voidPanel.SetActive(false);
             danger = false;
             priWarning = false;
             secWarning = false;

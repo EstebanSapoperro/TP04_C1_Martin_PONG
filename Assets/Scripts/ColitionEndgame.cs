@@ -18,7 +18,7 @@ public class ColitionEndgame : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("Barrier", "One");
+                winPanel.DeadRason("Barrier", " One");
             }
             else 
             {
@@ -26,7 +26,7 @@ public class ColitionEndgame : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("Barrier", "Two");
+                winPanel.DeadRason("Barrier", " Two");
             }
             
         }
