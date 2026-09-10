@@ -15,7 +15,7 @@ public class UIChangeVelocity : MonoBehaviour
 
     [SerializeField] private Slider slider;
 
-    [SerializeField] private Movement valuevelocityOfPlayer;
+    [SerializeField] private PlayerMovement valuevelocityOfPlayer;
 
     [SerializeField] private GameObject playerselected;
     [SerializeField] private SpriteRenderer playerSprite;

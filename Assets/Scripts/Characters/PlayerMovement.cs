@@ -2,7 +2,7 @@ using Unity.Android.Gradle.Manifest;
 using UnityEngine;
 
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] PlayerDataSo data;
     public Rigidbody2D rb;
@@ -13,12 +13,14 @@ public class Movement : MonoBehaviour
     private bool movingDown = false;
     private bool movingRight = false;
     private bool movingLeft = false;
+    public bool isPlayerOne;
     public float velocity = 0;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isPlayerOne = data.isPlayeOne;
         velocity = data.velocity;
         ActualColor = GetComponent<SpriteRenderer>();
         Debug.Log("listo para moverme, , yes sir");

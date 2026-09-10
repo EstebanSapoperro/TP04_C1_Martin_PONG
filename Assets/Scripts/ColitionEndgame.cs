@@ -4,19 +4,31 @@ using UnityEngine.UI;
 public class ColitionEndgame : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] WinPanel winPanel;
+    [SerializeField] private bool isPlayerOne = true;
 
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Ball"))
         {
-            Debug.Log("Un objeto de la capa correcta ha entrado al trigger.");
-            Time.timeScale = 0;
-            gameOverPanel.SetActive(true);
+            if (isPlayerOne == true)
+            {
+                GameManagerPONG.Stats.p2Win = true;
+                GameManagerPONG.Stats.p2Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("Barrier", "One");
+            }
+            else 
+            {
+                GameManagerPONG.Stats.p1Win = true;
+                GameManagerPONG.Stats.p1Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("Barrier", "Two");
+            }
+            
         }
     }
 }
