@@ -44,10 +44,21 @@ public class PlayerMovement : MonoBehaviour
             movingLeft = true;
         else movingLeft = false;
 
-        GameManagerPONG.Stats.movingDown = movingDown;
-        GameManagerPONG.Stats.movingUp = movingUp;
-        GameManagerPONG.Stats.movingLeft = movingLeft;
-        GameManagerPONG.Stats.movingRight = movingRight;
+        if (isPlayerOne == true) 
+        {
+            GameManagerPONG.Stats.p1movingDown = movingDown;
+            GameManagerPONG.Stats.p1movingUp = movingUp;
+            GameManagerPONG.Stats.p1movingLeft = movingLeft;
+            GameManagerPONG.Stats.p1movingRight = movingRight;
+        }
+        if (isPlayerOne == false)
+        {
+            GameManagerPONG.Stats.p2movingDown = movingDown;
+            GameManagerPONG.Stats.p2movingUp = movingUp;
+            GameManagerPONG.Stats.p2movingLeft = movingLeft;
+            GameManagerPONG.Stats.p2movingRight = movingRight;
+        }
+
     }
     private void FixedUpdate()
     {

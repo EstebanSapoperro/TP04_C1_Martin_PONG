@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9552ffefba72b3441acd16d9039aa3ef, type: 3}
+  m_Name: VoidData
+  m_EditorClassIdentifier: Assembly-CSharp::VoidDataSo
+  countPriWarning: 3
+  countSecWarning: 2
+  countTreWarning: 1
+  minbasecooldown: 6
+  maxbasecooldown: 8
+  priWarningColor: {r: 0.3773585, g: 0.21003912, b: 0.24553108, a: 1}
+  secWarningColor: {r: 0.3207547, g: 0.14020407, b: 0.17889352, a: 1}
+  treWarningColor: {r: 0.19496846, g: 0.053340405, b: 0.08412907, a: 1}
+  baseColor: {r: 0.42138356, g: 0.2901981, b: 0.3173594, a: 1}

@@ -11,10 +11,15 @@ public class GameManagerPONG : MonoBehaviour
         public static int machWinsCondition = 3;
 
 
-        public static bool movingUp = false;
-        public static bool movingDown = false;
-        public static bool movingRight = false;
-        public static bool movingLeft = false;
+        public static bool p1movingUp = false;
+        public static bool p1movingDown = false;
+        public static bool p1movingRight = false;
+        public static bool p1movingLeft = false;
+
+        public static bool p2movingUp = false;
+        public static bool p2movingDown = false;
+        public static bool p2movingRight = false;
+        public static bool p2movingLeft = false;
 
         public static bool p1Win = false;
         public static bool p2Win = false;

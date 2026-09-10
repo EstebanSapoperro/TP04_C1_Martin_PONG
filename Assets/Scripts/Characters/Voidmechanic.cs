@@ -4,10 +4,10 @@ using UnityEngine.UIElements;
 public class Voidmechanic : MonoBehaviour
 {
 
-    [SerializeField] private float minbasecooldown = 6.0f;
-    [SerializeField] private float maxbasecooldown = 8.0f;
+    [SerializeField] private float minbasecooldown;
+    [SerializeField] private float maxbasecooldown;
 
-    [SerializeField] PlayerDataSo data;
+    [SerializeField] VoidDataSo data;
     [SerializeField] private SpriteRenderer voided;
     [SerializeField] private SpriteRenderer playerOne;
     [SerializeField] private SpriteRenderer playerTwo;
@@ -20,13 +20,19 @@ public class Voidmechanic : MonoBehaviour
     private bool treWarning = false;
     private bool danger = false;
 
-    private float countPriWarning = 3;
-    private float countSecWarning = 2;
-    private float countTreWarning = 1;
+    private float countPriWarning;
+    private float countSecWarning;
+    private float countTreWarning;
     private float countDanger = 0.5f;
 
     void Start()
     {
+        countPriWarning = data.countPriWarning;
+        countSecWarning = data.countSecWarning;
+        countTreWarning = data.countTreWarning;
+
+        minbasecooldown = data.minbasecooldown;
+        maxbasecooldown = data.maxbasecooldown;
         cooldowntimer = Random.Range(minbasecooldown, maxbasecooldown);
     }
     private void FixedUpdate()
@@ -38,22 +44,19 @@ public class Voidmechanic : MonoBehaviour
 
         if ((cooldowntimer <= countPriWarning)&&(priWarning == false)) 
         {
-            Debug.Log("llego al timer1");
-            voided.color = Color.darkBlue;
+            voided.color = data.priWarningColor;
             priWarning = true;
         }
 
         if ((cooldowntimer <= countSecWarning) && (secWarning == false))
         {
-            Debug.Log("llego al timer3");
-            voided.color = Color.darkRed;
+            voided.color = data.secWarningColor;
             secWarning = true;
         }
 
         if ((cooldowntimer <= countTreWarning) && (treWarning == false))
         {
-            Debug.Log("llego al Danegr");
-            voided.color = Color.red;
+            voided.color = data.treWarningColor;
             treWarning = true;
         }
 
@@ -82,7 +85,7 @@ public class Voidmechanic : MonoBehaviour
 
         if (cooldowntimer <= 0)
         {
-            voided.color = Color.blue;
+            voided.color = data.baseColor;
             cooldowntimer = Random.Range(minbasecooldown, maxbasecooldown);
             voidPanel.SetActive(false);
             danger = false;

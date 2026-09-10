@@ -11,7 +11,7 @@ public class WinPanel : MonoBehaviour
 
     public void DeadRason(string rason, string playerdead) 
     {
-       deadRason.text = "The player " + playerdead + "die by " + rason;
+       deadRason.text = "The player " + playerdead + " die by " + rason;
        winsP1Counter.text = GameManagerPONG.Stats.p1Wins.ToString();
        winsP2Counter.text = GameManagerPONG.Stats.p2Wins.ToString();
     }

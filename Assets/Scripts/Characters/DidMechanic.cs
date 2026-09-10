@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class DidMechanic : MonoBehaviour
 {
+    [SerializeField] WinPanel winPanel;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI counter;
     [SerializeField] private Sprite[] faces;
@@ -67,28 +68,72 @@ public class DidMechanic : MonoBehaviour
             actualSprite = faces[0];
             visualSprite.sprite = actualSprite;
 
-            if ((actualDirection == 1) && (GameManagerPONG.Stats.movingUp == false)) 
+            if ((actualDirection == 1) && (GameManagerPONG.Stats.p1movingUp == false)) 
             {
+                GameManagerPONG.Stats.p2Win = true;
+                GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " One");
+            }
+            else if ((actualDirection == 1) && (GameManagerPONG.Stats.p2movingUp == false))
+            {
+                GameManagerPONG.Stats.p1Win = true;
+                GameManagerPONG.Stats.p1Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " Two");
             }
 
-            if ((actualDirection == 2) && (GameManagerPONG.Stats.movingRight == false))
+            if ((actualDirection == 2) && (GameManagerPONG.Stats.p1movingRight == false))
             {
+                GameManagerPONG.Stats.p2Win = true;
+                GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " One");
+            }
+            else if ((actualDirection == 2) && (GameManagerPONG.Stats.p2movingRight == false))
+            {
+                GameManagerPONG.Stats.p1Win = true;
+                GameManagerPONG.Stats.p1Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " Two");
             }
 
-            if ((actualDirection == 3) && (GameManagerPONG.Stats.movingDown == false))
+            if ((actualDirection == 3) && (GameManagerPONG.Stats.p1movingDown == false))
             {
+                GameManagerPONG.Stats.p2Win = true;
+                GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " One");
+            }
+            else if ((actualDirection == 3) && (GameManagerPONG.Stats.p2movingDown == false))
+            {
+                GameManagerPONG.Stats.p1Win = true;
+                GameManagerPONG.Stats.p1Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " Two");
             }
 
-            if ((actualDirection == 4) && (GameManagerPONG.Stats.movingLeft == false))
+            if ((actualDirection == 4) && (GameManagerPONG.Stats.p1movingLeft == false))
             {
+                GameManagerPONG.Stats.p2Win = true;
+                GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " One");
+            }
+            else if ((actualDirection == 4) && (GameManagerPONG.Stats.p2movingLeft == false))
+            {
+                GameManagerPONG.Stats.p1Win = true;
+                GameManagerPONG.Stats.p1Wins++;
+                Time.timeScale = 0;
+                gameOverPanel.SetActive(true);
+                winPanel.DeadRason("get see by Did", " Two");
             }
         }
 
