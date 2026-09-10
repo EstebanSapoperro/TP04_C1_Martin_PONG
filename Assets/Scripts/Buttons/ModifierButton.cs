@@ -22,7 +22,7 @@ public class ModifierButton : MonoBehaviour
     {
         if (GameManagerPONG.Stats.actualModifierRequest == GameManagerPONG.Stats.modifierRequest)
         {
-            modifierActivator = NumeroAleatorio.ObtenerNumero(1, 7);
+            modifierActivator = RandomNumber.ObteinRandomNumber(1, 7);
 
             if (modifierActivator == 1)
             {
@@ -61,6 +61,8 @@ public class ModifierButton : MonoBehaviour
 
             if (modifierActivator == -1)
             {
+                GameManagerPONG.Stats.p1Win = false;
+                GameManagerPONG.Stats.p2Win = false;
                 Time.timeScale = 1;
                 SceneManager.LoadScene("SampleScene");
             }
@@ -68,6 +70,7 @@ public class ModifierButton : MonoBehaviour
             if ((modifiersRules != null) && (modifierActivator != -1))
             {
                 modifiersRules.SetActive(true);
+                
                 Exitpanel.SetActive(false);
             }
 
@@ -76,6 +79,8 @@ public class ModifierButton : MonoBehaviour
 
         else
         {
+            GameManagerPONG.Stats.p1Win = false;
+            GameManagerPONG.Stats.p2Win = false;
             Time.timeScale = 1;
             SceneManager.LoadScene("SampleScene");
         }

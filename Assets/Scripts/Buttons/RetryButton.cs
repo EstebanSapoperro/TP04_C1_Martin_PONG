@@ -17,6 +17,8 @@ public class RetryButton : MonoBehaviour
 
     private void onClick() 
     {
+        GameManagerPONG.Stats.p1Win = false;
+        GameManagerPONG.Stats.p2Win = false;
         Time.timeScale = 1;
         SceneManager.LoadScene("SampleScene");
     }

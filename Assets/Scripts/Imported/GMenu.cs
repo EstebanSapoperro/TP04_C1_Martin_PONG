@@ -15,20 +15,25 @@ public class UIGMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(Pause) && Time.timeScale == 0)
+        if (GameManagerPONG.Stats.inTrasition == false)
         {
-            Time.timeScale = 1;
+            if (Input.GetKeyDown(Pause) && Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+
+            }
+            else if (Input.GetKeyDown(Pause) && Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+
+            if (Input.GetKeyDown(Pause))
+            {
+                Pausepanel.SetActive(!Pausepanel.activeSelf);
+            }
+
 
         }
-        else if (Input.GetKeyDown(Pause) && Time.timeScale == 1)
-        {
-            Time.timeScale = 0;
-        }
 
-        if (Input.GetKeyDown(Pause))
-        {
-            Pausepanel.SetActive(!Pausepanel.activeSelf);
-        }
     }
 }

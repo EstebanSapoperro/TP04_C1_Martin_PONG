@@ -13,8 +13,15 @@ public class WinPanel : MonoBehaviour
 
     public void DeadRason(string rason, string playerdead) 
     {
+        GameManagerPONG.Stats.inTrasition = true;
        deadRason.text = "The player " + playerdead + " die by " + rason;
        winsP1Counter.text = GameManagerPONG.Stats.p1Wins.ToString();
        winsP2Counter.text = GameManagerPONG.Stats.p2Wins.ToString();
+        if ((GameManagerPONG.Stats.p1Wins == GameManagerPONG.Stats.machWinsCondition) || (GameManagerPONG.Stats.p2Wins == GameManagerPONG.Stats.machWinsCondition)) 
+        {
+            winingPanel.SetActive(true);
+            roundPanel.SetActive(false);
+        
+        }
     }
 }

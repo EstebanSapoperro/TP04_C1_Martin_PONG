@@ -31,6 +31,7 @@ public class GameManagerPONG : MonoBehaviour
         public static int p1Wins = 0;
         public static int p2Wins = 0;
 
+        public static bool inTrasition = false;
         public static bool pONGActive = false;
         public static bool llabActive = false;
         public static bool slamActive = false;
