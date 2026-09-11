@@ -5,7 +5,7 @@ public class TimeCount : MonoBehaviour
 {
     [SerializeField] WinPanel winPanel;
     [SerializeField] private GameObject gameOverPanel;
-    private float baseTime = 20.0f;
+    
     private bool finished = false;
     [SerializeField] private GameObject ball;
     [SerializeField] private TextMeshProUGUI counter;
@@ -13,7 +13,7 @@ public class TimeCount : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        time = baseTime;
+        time = GameManagerPONG.Stats.machTime;
     }
     private void Update()
     {

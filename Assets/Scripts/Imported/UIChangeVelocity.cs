@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 //esto fue un error de diseño, pense que seria mejora el tener 1 solo script encargado de los sliders
@@ -36,9 +37,10 @@ public class UIChangeVelocity : MonoBehaviour
         slider.onValueChanged.AddListener(Changevalue);
     }
 
-
-
-
+    private void OnDestroy() 
+    {
+        slider.onValueChanged.RemoveAllListeners();
+    }
 
     void Start()
     {
@@ -126,10 +128,7 @@ public class UIChangeVelocity : MonoBehaviour
 
 
     }
-    private void OnDestroy()
-    {
-        slider.onValueChanged.RemoveAllListeners();
-    }
+
     private void Changevalue(float value)
     {
         if (velocity == true)

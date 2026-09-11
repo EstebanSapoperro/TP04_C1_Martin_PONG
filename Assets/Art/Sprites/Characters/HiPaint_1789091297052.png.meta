@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: e8873c3234c66b24fba6aa624f34bf40
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7792439026215474839
+    second: HiPaint_1789091297052_0
+  - first:
+      213: 5109453743669988006
+    second: HiPaint_1789091297052_1
+  - first:
+      213: -6995721101889735633
+    second: HiPaint_1789091297052_2
+  - first:
+      213: -2078159671495315140
+    second: HiPaint_1789091297052_3
+  - first:
+      213: -5784200829318546567
+    second: HiPaint_1789091297052_4
+  - first:
+      213: 1321669271748937800
+    second: HiPaint_1789091297052_5
+  - first:
+      213: 1627790300824303645
+    second: HiPaint_1789091297052_6
+  - first:
+      213: 3561123707776022497
+    second: HiPaint_1789091297052_7
+  - first:
+      213: 1056535447538955370
+    second: HiPaint_1789091297052_8
+  - first:
+      213: 3965993212895327875
+    second: HiPaint_1789091297052_9
+  - first:
+      213: -5331430197570067916
+    second: HiPaint_1789091297052_10
+  - first:
+      213: 2184347354722263125
+    second: HiPaint_1789091297052_11
+  - first:
+      213: -3472174330403284372
+    second: HiPaint_1789091297052_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 308
+        width: 49
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796d67b120e442c60800000000000000
+      internalID: 7792439026215474839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 135
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa4dbbdb1d68e640800000000000000
+      internalID: 5109453743669988006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 359
+        width: 62
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24782609b43aee90800000000000000
+      internalID: -6995721101889735633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_3
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 366
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31baf11ac4e823e0800000000000000
+      internalID: -2078159671495315140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 331
+        width: 81
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97bb2f2edf36abfa0800000000000000
+      internalID: -5784200829318546567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 261
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848052d3333875210800000000000000
+      internalID: 1321669271748937800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_6
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 260
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18757977a2179610800000000000000
+      internalID: 1627790300824303645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 190
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e736330527ab6130800000000000000
+      internalID: 3561123707776022497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_8
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 123
+        width: 49
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64fa2b446199ae00800000000000000
+      internalID: 1056535447538955370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_9
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 191
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3867c3c70d90a0730800000000000000
+      internalID: 3965993212895327875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_10
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 132
+        width: 81
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432ab018b74f206b0800000000000000
+      internalID: -5331430197570067916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_11
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 103
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550e840985c505e10800000000000000
+      internalID: 2184347354722263125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HiPaint_1789091297052_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 84
+        width: 62
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a1516c7db50dfc0800000000000000
+      internalID: -3472174330403284372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HiPaint_1789091297052_0: 7792439026215474839
+      HiPaint_1789091297052_1: 5109453743669988006
+      HiPaint_1789091297052_10: -5331430197570067916
+      HiPaint_1789091297052_11: 2184347354722263125
+      HiPaint_1789091297052_12: -3472174330403284372
+      HiPaint_1789091297052_2: -6995721101889735633
+      HiPaint_1789091297052_3: -2078159671495315140
+      HiPaint_1789091297052_4: -5784200829318546567
+      HiPaint_1789091297052_5: 1321669271748937800
+      HiPaint_1789091297052_6: 1627790300824303645
+      HiPaint_1789091297052_7: 3561123707776022497
+      HiPaint_1789091297052_8: 1056535447538955370
+      HiPaint_1789091297052_9: 3965993212895327875
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

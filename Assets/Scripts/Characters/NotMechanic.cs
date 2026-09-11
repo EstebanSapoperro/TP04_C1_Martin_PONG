@@ -12,8 +12,8 @@ public class NotMechanic : MonoBehaviour
     private Sprite actualSprite;
 
     [SerializeField] private Image visualSprite;
-    [SerializeField] private float minbasecooldown = 5.0f;
-    [SerializeField] private float maxbasecooldown = 8.0f;
+    [SerializeField] private float minbasecooldown = 3.0f;
+    [SerializeField] private float maxbasecooldown = 11.0f;
     [SerializeField] private float timeDetection = -0.5f;
 
     private int actualDirection = 0;

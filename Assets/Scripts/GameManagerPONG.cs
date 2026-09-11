@@ -11,7 +11,7 @@ public class GameManagerPONG : MonoBehaviour
         public static int machWinsCondition = 3;
 
         public static int baseModifierRequest = 2;
-        public static int modifierRequest = 2;
+        public static int modifierRequest = 1;
         public static int actualModifierRequest = 0;
 
 

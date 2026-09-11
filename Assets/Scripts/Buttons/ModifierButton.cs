@@ -5,6 +5,7 @@ public class ModifierButton : MonoBehaviour
 {
     [SerializeField] private GameObject modifiersRules;
     [SerializeField] private GameObject Exitpanel;
+    [SerializeField] private RulesInfo infoRules;
     private int modifierActivator;
 
     [SerializeField] private Button Exitbutton;
@@ -22,6 +23,7 @@ public class ModifierButton : MonoBehaviour
     {
         if (GameManagerPONG.Stats.actualModifierRequest == GameManagerPONG.Stats.modifierRequest)
         {
+            GameManagerPONG.Stats.actualModifierRequest = 0;
             modifierActivator = RandomNumber.ObteinRandomNumber(1, 7);
 
             if (modifierActivator == 1)
@@ -70,6 +72,7 @@ public class ModifierButton : MonoBehaviour
             if ((modifiersRules != null) && (modifierActivator != -1))
             {
                 modifiersRules.SetActive(true);
+                infoRules.asingEnemy(modifierActivator);
                 
                 Exitpanel.SetActive(false);
             }
@@ -79,6 +82,7 @@ public class ModifierButton : MonoBehaviour
 
         else
         {
+            GameManagerPONG.Stats.actualModifierRequest++;
             GameManagerPONG.Stats.p1Win = false;
             GameManagerPONG.Stats.p2Win = false;
             Time.timeScale = 1;
