@@ -207,6 +207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1688322559}
     m_Modifications:
+    - target: {fileID: 328285582333194358, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.9999924
+      objectReference: {fileID: 0}
     - target: {fileID: 388299696622633453, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
       propertyPath: m_fontSize
       value: 72
@@ -219,6 +223,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GeneralPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1586853169306712574, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.9999924
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981835014663690999, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3327621357030911946, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
       propertyPath: m_text
       value: 'Desarrollado por: Martin Garcia
@@ -227,11 +239,27 @@ PrefabInstance:
         por: Martin Garcia
 
         El sprite del logo, Llab, Pong y el piso del
-        ring fueron editados usando IA.'
+        ring fueron editados usando IA
+
+        La fuente de texto fue sacada de:
+
+        https://www.dafont.com/es/calculator.font'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327621357030911946, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327621357030911946, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5743954921307482317, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
       propertyPath: m_fontSize
       value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055026672756815474, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.9999924
       objectReference: {fileID: 0}
     - target: {fileID: 7202465835776561469, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
       propertyPath: m_fontSize

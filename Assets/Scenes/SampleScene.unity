@@ -12572,6 +12572,28 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3327621357030911946, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_text
+      value: 'Desarrollado por: Martin Garcia
+
+        Ui, fondos y demas sprites
+        por: Martin Garcia
+
+        El sprite del logo, Llab, Pong y el piso del
+        ring fueron editados usando IA
+
+        La fuente de texto fue sacada de:
+
+        https://www.dafont.com/es/calculator.font'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327621357030911946, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327621357030911946, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3541031748438090088, guid: 01c45880bb28e1c42aaf2cdc7a89a018, type: 3}
       propertyPath: m_IsActive
       value: 0
