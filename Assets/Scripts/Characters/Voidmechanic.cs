@@ -68,7 +68,7 @@ public class Voidmechanic : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get seen by Void", " One");
+                winPanel.DeadRason("que lo vio Void", " Uno");
             }
             else if (playerTwo.color != Color.black)
             {
@@ -76,7 +76,7 @@ public class Voidmechanic : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get seen by Void", " Two");
+                winPanel.DeadRason("que lo vio Void", " Dos");
             }
             voidPanel.SetActive(true);
             voided.color = Color.black;

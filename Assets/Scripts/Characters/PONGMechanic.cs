@@ -20,7 +20,7 @@ public class PONGMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get sliced by PONG", " One");
+                winPanel.DeadRason("que lo corto PONG", " Uno");
             }
             else
             {
@@ -28,7 +28,7 @@ public class PONGMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get sliced by PONG", " two");
+                winPanel.DeadRason("que lo corto PONG", " Dos");
             }
 
 

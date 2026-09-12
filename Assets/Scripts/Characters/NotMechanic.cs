@@ -14,7 +14,7 @@ public class NotMechanic : MonoBehaviour
     [SerializeField] private Image visualSprite;
     [SerializeField] private float minbasecooldown = 3.0f;
     [SerializeField] private float maxbasecooldown = 11.0f;
-    [SerializeField] private float timeDetection = -0.5f;
+    [SerializeField] private float timeDetection = -0.3f;
 
     private int actualDirection = 0;
     //0 = none
@@ -75,7 +75,7 @@ public class NotMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get see by Did", " One");
+                winPanel.DeadRason("que fue visto por Not", " Uno");
             }
             else if ((actualDirection == 1) && (GameManagerPONG.Stats.p2movingUp == true))
             {
@@ -83,7 +83,7 @@ public class NotMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get see by Did", " Two");
+                winPanel.DeadRason("que fue visto por Not", " Dos");
             }
 
             if ((actualDirection == 2) && (GameManagerPONG.Stats.p1movingRight == true))

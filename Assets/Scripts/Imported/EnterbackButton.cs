@@ -8,6 +8,7 @@ public class EnterbackButton : MonoBehaviour
     [SerializeField] private bool IsResumeButton = false;
     [SerializeField] private GameObject Enterpanel;
     [SerializeField] private GameObject Exitpanel;
+    [SerializeField] private GameObject timePanel;
 
     [SerializeField] private Button Exitbutton;
     private void Awake()
@@ -48,6 +49,11 @@ public class EnterbackButton : MonoBehaviour
             else if (Time.timeScale == 1)
             {
                 Time.timeScale = 0;
+            }
+
+            if (timePanel != null)
+            {
+                timePanel.SetActive(true);
             }
 
         }

@@ -17,7 +17,7 @@ MonoBehaviour:
   countTreWarning: 1
   minbasecooldown: 6
   maxbasecooldown: 8
-  priWarningColor: {r: 0.3773585, g: 0.21003912, b: 0.24553108, a: 1}
-  secWarningColor: {r: 0.3207547, g: 0.14020407, b: 0.17889352, a: 1}
-  treWarningColor: {r: 0.19496846, g: 0.053340405, b: 0.08412907, a: 1}
-  baseColor: {r: 0.42138356, g: 0.2901981, b: 0.3173594, a: 1}
+  priWarningColor: {r: 0.74213827, g: 0.4270795, b: 0.49459213, a: 1}
+  secWarningColor: {r: 0.5597484, g: 0.25875157, b: 0.32418558, a: 1}
+  treWarningColor: {r: 0.54088044, g: 0.06973612, b: 0.16134761, a: 1}
+  baseColor: {r: 0.5882353, g: 0.5019608, b: 0.5019608, a: 1}

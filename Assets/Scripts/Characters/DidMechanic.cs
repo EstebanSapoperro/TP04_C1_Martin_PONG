@@ -13,7 +13,7 @@ public class DidMechanic : MonoBehaviour
     [SerializeField] private Image visualSprite;
     [SerializeField] private float minbasecooldown = 5.0f;
     [SerializeField] private float maxbasecooldown = 8.0f;
-    [SerializeField] private float timeDetection = -0.5f;
+    [SerializeField] private float timeDetection = -0.3f;
 
     private int actualDirection = 0;
     //0 = none
@@ -74,7 +74,7 @@ public class DidMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get see by Did", " One");
+                winPanel.DeadRason("fue visto por", " Uno");
             }
             else if ((actualDirection == 1) && (GameManagerPONG.Stats.p2movingUp == false))
             {
@@ -82,7 +82,7 @@ public class DidMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get see by Did", " Two");
+                winPanel.DeadRason("fue visto por", " Dos");
             }
 
             if ((actualDirection == 2) && (GameManagerPONG.Stats.p1movingRight == false))
@@ -91,7 +91,7 @@ public class DidMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p2Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get see by Did", " One");
+                winPanel.DeadRason("que fue visto por Did", " One");
             }
             else if ((actualDirection == 2) && (GameManagerPONG.Stats.p2movingRight == false))
             {
@@ -99,7 +99,7 @@ public class DidMechanic : MonoBehaviour
                 GameManagerPONG.Stats.p1Wins++;
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
-                winPanel.DeadRason("get see by Did", " Two");
+                winPanel.DeadRason("que fue visto por Did", " Two");
             }
 
             if ((actualDirection == 3) && (GameManagerPONG.Stats.p1movingDown == false))

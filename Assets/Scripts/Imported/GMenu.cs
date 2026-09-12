@@ -5,6 +5,7 @@ public class UIGMenu : MonoBehaviour
 
     [SerializeField] private KeyCode Pause = KeyCode.Escape;
     [SerializeField] private GameObject Pausepanel;
+    [SerializeField] private GameObject timePanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +30,14 @@ public class UIGMenu : MonoBehaviour
 
             if (Input.GetKeyDown(Pause))
             {
+
                 Pausepanel.SetActive(!Pausepanel.activeSelf);
+
+                if (timePanel != null)
+                {
+
+                    timePanel.SetActive(!timePanel.activeSelf);
+                }
             }
 
 

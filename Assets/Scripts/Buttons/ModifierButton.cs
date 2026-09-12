@@ -63,6 +63,7 @@ public class ModifierButton : MonoBehaviour
 
             if (modifierActivator == -1)
             {
+                GameManagerPONG.Stats.inTrasition = false;
                 GameManagerPONG.Stats.p1Win = false;
                 GameManagerPONG.Stats.p2Win = false;
                 Time.timeScale = 1;
@@ -71,6 +72,7 @@ public class ModifierButton : MonoBehaviour
 
             if ((modifiersRules != null) && (modifierActivator != -1))
             {
+                GameManagerPONG.Stats.inTrasition = false;
                 modifiersRules.SetActive(true);
                 infoRules.asingEnemy(modifierActivator);
                 
@@ -82,6 +84,7 @@ public class ModifierButton : MonoBehaviour
 
         else
         {
+            GameManagerPONG.Stats.inTrasition = false;
             GameManagerPONG.Stats.actualModifierRequest++;
             GameManagerPONG.Stats.p1Win = false;
             GameManagerPONG.Stats.p2Win = false;
